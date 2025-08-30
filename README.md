@@ -23,26 +23,4 @@ HTML5 – for structure
 
 CSS3 – for styling and responsiveness
 
-📸 Screenshots
-🎥 Homepage
 
-
-(Add a screenshot of your website inside images/ folder and name it screenshot.png)
-
-💻 Setup Instructions
-
-Clone this repository
-
-git clone https://github.com/your-username/movie-website.git
-
-
-Open the folder
-
-cd movie-website
-
-
-Open index.html in your browser
-
-🌟 Live Demo
-
-👉 Click here to view live website
