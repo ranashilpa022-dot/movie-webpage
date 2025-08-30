@@ -89,7 +89,7 @@ color: white;
 /*-----------------------start main-section---------------------*/
 .banner .banner-cards{
    margin: 50px 150px;
-   background-image: url(images/image\ copy.png);
+   background-image: url(image\ copy.png);
    background-repeat: no-repeat;
    background-size: cover;
    height: 600px;
@@ -588,5 +588,6 @@ color: white;
         font-size: 20px;
     }
 }  
+
 
 
