@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "sens-serif";
+    background-color: rgba(0, 0, 0, 0.929);
+}
+.navbar{
+height: 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 30px;
+list-style: none;
+}
+.navbar-menu-btn{ 
+    display: none;
+}
+.navbar-brand{
+    font-size: 40px;
+    margin-left: 90px;
+    color: white;
+    text-decoration: none;
+}
+.navbar-brand span{
+    color: blue;
+}
+nav{
+    margin-right: 200px;
+}
+.navbar-nav{
+    display: flex;
+    
+}
+.navbar-nav li{
+    margin-left: 60px;
+    list-style: none;
+}
+.navbar-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.navbar-nav li a:hover{
+    color: blue;
+}
+.navbar-actions{
+display: flex;
+align-items: center;
+}
+
+.navbar-form{
+position: relative;
+margin-right: 150px;
+}
+
+.navbar-form-search{
+background: white;
+width: 100%;
+padding: 12px 20px;
+border-radius: 15px;
+color:black;
+font-size: 20px;
+font-weight:600;
+border: none;
+margin-top: 10px;
+}
+.navbar-signin{
+display: flex;
+align-items: center;
+font-size: 20px;
+margin-right: 80px;
+font-size: 25px;
+text-decoration: none;
+color: white;
+}
+.navbar-signin:hover{
+    color: blue;
+}
+
+/*-----------------------end navbar-section---------------------*/
+
+/*-----------------------start main-section---------------------*/
+.banner .banner-cards{
+   margin: 50px 150px;
+   background-image: url(images/image\ copy.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 600px;
+   border-radius: 50px;
+   transition: transform 0.5s;
+}
+.banner .banner-cards:hover{
+    transform: scale(0.9);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.text{
+    color: white;
+    padding: 400px 80px;
+}
+.text1{
+    display: flex;
+    padding-bottom: 50px;
+    font-size: 20px;
+    padding-left: 50px;
+}
+.text1 .one{
+    padding-left: 50px;
+}
+.text2{
+    font-size: 60px;
+    padding-left: 80px;
+}
+/*------------------------end main-section-----------------------------*/
+
+/*-----------------------------start 2nd nav---------------------------*/
+.nav-two{
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.348);
+    width: 90%;
+    margin-left: 90px;
+    border-radius: 20px;
+    padding-top: 25px;
+}
+.nav-two ul{
+    list-style: none;
+    display: flex;
+    margin-left: 50px; 
+}
+.nav-two ul li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+}
+.box{
+    margin-left: 950px;
+}
+.box a{
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+}
+.box input{
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.764);
+}
+/*--------------------------end 2nd nav-----------------------*/
+
+/*---------------------------movies----------------------------*/
+
+.movies{
+    display: block;
+}
+.two{
+    display: flex;
+    gap: 50px;
+    margin: 30px 70px;
+}
+.two .mv img{
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+    transition: transform 0.5s; 
+}
+.two .mv img:hover{
+    transform: scale(1.05);
+    filter: brightness(80%);
+} 
+.two .mv h1,
+.two .mv p{
+    padding-left: 50px;
+    color: white;
+}
+.two .mv h1:hover{
+    color: skyblue;
+}
+.two .mv1 img{
+    height: 400px;
+    width: 250px;
+    border-radius: 30px;
+    transition: transform 0.5s; 
+}
+.two .mv1 img:hover{
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+.two .mv1 h1,
+.two .mv1 p{
+    color: white;
+    padding-left: 45px;
+}
+.two .mv1 h1:hover{
+    color: skyblue;
+}
+.button{
+   margin: 50px 800px;
+   padding: 20px 60px;
+   border-radius: 50px;
+   border: none;
+   font-size: 20px;
+   background-color: darkslategray;
+   color: white;
+}
+.button:hover{
+   background-color: darkcyan;
+   transition: background-color 0.3s ease;
+}
+.two .mv .play{
+    position: relative;
+    
+}
+.two .mv .play span{
+    position: absolute;
+    right: 100px;
+    top: -250px;
+    padding: 18px;
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 100%;
+    opacity: 0;
+    color: white;
+    transition: all ease 0.4s;
+    border: 3px solid white;
+}
+.two .mv:hover .play span{
+    opacity: 10;
+    transform: translateZ(-10px);
+}
+.two .mv1 .play{
+    position: relative;
+    
+}
+.two .mv1 .play span{
+    position: absolute;
+    right: 100px;
+    top: -250px;
+    padding: 18px;
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 100%;
+    opacity: 0;
+    color: white;
+    transition: all ease 0.4s;
+    border: 3px solid white;
+}
+.two .mv1:hover .play span{
+    opacity: 10;
+    transform: translateZ(-10px);
+}
+
+/* ---------------------end movies------------------- */
+
+/* -------------------------category------------------------*/
+#category{
+   color: white;
+   display: block;
+   padding-bottom: 60px;
+}
+#category span{
+    margin-left: 120px;
+    font-size: 60px;
+}
+#category .three{
+    display: flex;
+    padding: 20px 110px; 
+    gap: 30px;
+}
+#category .three .ct img{
+    width: 400px;
+    height: 250px;
+    border-radius: 50px;  
+}
+#category .three .ct h3{
+    margin-left: 10px;
+    font-size: 30px;
+}
+#category .three .ct h3:hover{
+   color: skyblue;
+} 
+
+/*------------------------------end category--------------------------*/
+
+/*----------------------------------live------------------------------*/
+#live{
+   color: white;
+   display: block;
+}
+#live span{
+    margin:  30px 120px;
+    font-size: 60px;
+}
+#live .four{
+    display: flex;
+    padding: 70px 110px; 
+    gap: 35px;
+}
+#live .four .lv img{
+    width: 530px;
+    height: 350px;
+    border-radius: 50px; 
+    transition: transform 0.5s; 
+}
+#live .four .lv img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+#live .four .lv h2{
+    margin-left: 10px;
+    font-size: 40px;
+}
+#live .four .lv h2:hover{
+    color: skyblue;
+}
+#live .four .lv .logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.btn {
+    position: relative;
+}
+.btn button{
+    position: absolute;
+    left: 30px;
+    top: -320px;
+    padding: 18px;
+    background-color:orangered;
+    border-radius: 20px;
+    width: 80px;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    opacity: 10;
+    transition: all ease 0.4s; 
+    border: none;
+}
+#live .four .lv .play{
+    position: relative;
+    
+}
+#live .four .lv .play span{
+    position: absolute;
+    right: 100px;
+    top: -250px;
+    padding: 18px;
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+    border: 3px solid white;
+}
+#live .four .lv:hover .play span{
+    opacity: 10;
+    transform: translateZ(-10px); 
+}
+/*-------------------------------end live-----------------------------*/
+
+
+
+/*-------------------------------start-footer------------------------------*/
+#footer{
+    height: 500px;
+    width: 100%;
+    margin-top: 90px;
+    font-size: 15px;
+}
+.container1{
+    display: flex;
+    color: white;
+}
+.content h1{
+    margin-left: 200px ;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 30px; 
+}
+.content .logo{
+    margin-left: 200px ;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 45px; 
+}
+.content .logo span{
+    color: blue;
+}
+.content p{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 130px;
+    color: white;
+}
+.content .icons {
+    margin-left: 120px ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px; 
+}
+.content .icons i{
+    padding-left: 30px ;
+}
+.content a{
+    text-decoration: none;
+    color: white;
+    margin-left: 80px;
+}
+.content a:hover{
+    color: skyblue;
+}
+.copy{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 30px;
+    height: 20vh;
+}
+
+/* ------------------@media query---------------- */
+
+/* -------------------navbar-section----------------- */
+
+ @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .navbar-brand {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 20px;
+    }
+
+    .navbar-actions {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .navbar-form-search {
+        width: 90%;
+        margin: 10px 0;
+    }
+} 
+
+/* --------banner-section---------------- */
+
+@media (max-width: 768px) {
+    .banner .banner-cards {
+        margin: 20px;
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .text {
+        padding: 250px 20px;
+    }
+
+    .text2 {
+        font-size: 35px;
+        padding-left: 20px;
+    }
+
+    .text1 .one {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+} 
+
+/* ---------------------movie---------------------- */
+
+.two {
+    display: flex;
+    gap: 50px;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .two {
+        flex-direction: column;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .two .mv, .two .mv1 {
+        width: 100%;
+    }
+
+    .two .mv img, .two .mv1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .two .mv h1, .two .mv p, .two .mv1 h1, .two .mv1 p {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+}
+
+/* --------------------category-section----------------- */
+
+@media (max-width: 768px) {
+    #category .three {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    #category .three .ct img {
+        width: 100%;
+        height: auto;
+    }
+
+    #category span {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    #category .three .ct h3 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+} 
+
+/* --------------------------live-section----------------------- */
+
+ @media (max-width: 768px) {
+    #live .four {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    #live span {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    #live .four .lv img {
+        width: 100%;
+        height: auto;
+    }
+
+    #live .four .lv h2 {
+        font-size: 20px;
+    }
+
+    .btn button {
+        top: -50px;
+        left: 10px;
+    }
+} 
+/* ---------------------footer-section-------------------- */
+
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .content h1, .content .logo, .content p, .content a {
+        margin-left: 0;
+    }
+
+    .icons {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .copy {
+        font-size: 20px;
+    }
+}  
+
+
